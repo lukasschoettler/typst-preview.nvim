@@ -54,7 +54,7 @@ function M.typst_compile_cmd(opts)
         "typst",
         "compile",
         "--root",
-        vim.api.nvim_buf_get_name(0),
+        vim.fs.dirname(vim.api.nvim_buf_get_name(0)),
         "-f",
         opts.format,
         "--ppi",
