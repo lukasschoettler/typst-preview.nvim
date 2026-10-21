@@ -51,6 +51,7 @@ end
 ---@return table
 function M.typst_compile_cmd(opts)
     local cmd = {
+        "bash",
         "typst",
         "compile",
         "-f",
